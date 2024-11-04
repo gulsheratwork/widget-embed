@@ -1894,3 +1894,25 @@ function renderCustomerSupportWidget() {
     chatContent.appendChild(welcomeMessage);
     chatContent.appendChild(chatOptions);
 }
+
+
+(function() {
+  // Create the widget container
+  var widgetContainer = document.createElement('div');
+  widgetContainer.id = 'widget-container';
+  document.body.appendChild(widgetContainer);
+
+  // Add CSS dynamically
+  var style = document.createElement('link');
+  style.rel = 'stylesheet';
+  style.href = 'https://gulsheratwork.github.io/widget-embed/style.css'; // Link to CSS on GitHub Pages
+  document.head.appendChild(style);
+
+  // Load HTML content (if your HTML is simple, you can also just create it here)
+  fetch('https://gulsheratwork.github.io/widget-embed/index.html')
+    .then(response => response.text())
+    .then(data => {
+      widgetContainer.innerHTML = data;
+    })
+    .catch(error => console.log('Error loading HTML:', error));
+})();
