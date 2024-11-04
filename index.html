@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="chat-container">
+        <div class="text-launcher">
+            <h1 class="text-launch">👋 Try The Intake Bot</h1>
+
+            <a href="https://chatwidget.automatikpro.com/the-intake-bot" id="icw--avatar-direct-link" class="open-tab-link" target="_blank" rel="noopener"></a>
+        </div>
+
+        <div class="video-thumbnail" id="video-container" aria-label="Open chat widget">
+            <div class="video-circle">
+                <video id="thumbnail-video" autoplay loop muted>
+                    <source
+                        src="https://storage.googleapis.com/msgsndr/o8yXFeC9dfjequgTmADj/media/67254cb3eb590d0e18640c33.mp4"
+                        type="video/mp4">
+                </video>
+            </div>
+            <span class="online-dot"></span> <!-- Green online dot -->
+        </div>
+
+
+        <div class="chat-widget" id="chat-widget" aria-hidden="true">
+            <div class="video-background" id="video-background">
+                <video id="background-video" autoplay loop muted>
+                    <source src="https://storage.googleapis.com/msgsndr/o8yXFeC9dfjequgTmADj/media/6725484582949649ceb22d7a.mp4" type="video/mp4">
+                </video>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" id="progress-bar"></div>
+                </div>
+            </div>             
+            <div id="loading-overlay" class="loading-overlay">
+              <div class="loading-content">
+                  <div class="loading-circle">
+                      <div class="loading-border"></div>
+                      <img src="https://storage.googleapis.com/msgsndr/o8yXFeC9dfjequgTmADj/media/671fca508468fa0f04d8e8b5.png" alt="Loading Logo" class="loading-logo">
+                  </div>
+                  <p>One moment please...</p>
+              </div>
+          </div>          
+          
+            <div class="chat-header" id="chat-header">
+                <button id="play-pause-btn" class="control-btn" aria-label="Play/Pause">
+                    <img id="play-pause-icon" class="control-btn" aria-label="Play/Pause"
+                        src="https://storage.googleapis.com/msgsndr/aJYHtddTenz299BOqzfz/media/66eb060cf9de91b118c93a66.png"
+                        alt="Play/Pause Icon">
+                </button>
+
+                <button id="mute-unmute-btn" class="control-btn" aria-label="Mute/Unmute">
+                    <img id="mute-unmute-icon"
+                        src="https://storage.googleapis.com/msgsndr/aJYHtddTenz299BOqzfz/media/66eb0b2cc6a83988da4ff9fd.png"
+                        alt="Mute/Unmute Icon">
+                </button>
+
+                <button id="refresh-btn" class="control-btn" aria-label="Refresh">
+                    <img id="refresh-icon"
+                        src="https://storage.googleapis.com/msgsndr/aJYHtddTenz299BOqzfz/media/66eb04eaa256dd3e330dde51.png"
+                        alt="Refresh Icon">
+                </button>
+
+                <button id="close-btn" aria-label="Close chat widget">
+                    <img id="close-icon"
+                        src="https://storage.googleapis.com/msgsndr/aJYHtddTenz299BOqzfz/media/66eb0456b8d5546df6dc3dac.png"
+                        alt="Close Icon">
+                </button>
+            </div>
+
+            <div class="chat-content" id="chat-content">
+                <div class="Empty-container"></div>
+                <div class="message ot-message">Hi 👋🏼 Let's find out if The Intake Bot can help your firm in </div>
+                <div class="chat-options">
+                    <button class="option-btn bef" onclick="selectOption('Go ahead', true)">Go ahead</button>
+                </div>
+            </div>
+            <div class="footer">
+                <div _ngcontent-pna-c93="" class="poweredBox"><p _ngcontent-pna-c93="" class="powered-style">Powered
+                        by</p><img src="https://storage.googleapis.com/msgsndr/o8yXFeC9dfjequgTmADj/media/67193d949965e3aa9919d4a9.png" alt="" class="img-powered"></a></div>
+            </div>
+        </div>
+    </div>
+    <div id="white-overlay"></div>
+    
+    <script src="Script.js"></script>
+</body>
+
+</html>
